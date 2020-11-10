@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Button from 'react-native-button';
 import {Actions} from 'react-native-router-flux';
+import WebView from 'react-native-webview';
 
 const styles = StyleSheet.create({
   container: {
@@ -36,24 +37,7 @@ export default class extends React.Component {
     const data = this.props.data || 'No Data';
     console.log('Login RENDER');
     return (
-      <View style={[styles.container, this.props.style]}>
-        <Text>Login page 1</Text>
-        <Text>Title: {title}</Text>
-        <Text>Data: {data}</Text>
-        <Button
-          onPress={() =>
-            Actions.loginModal2({data: 'Custom data2', title: 'Custom title2'})
-          }>
-          Login 2
-        </Button>
-        <Button
-          onPress={() =>
-            Actions.refresh({title: 'Changed title', data: 'Changed data'})
-          }>
-          Change title
-        </Button>
-        <Button onPress={Actions.pop}>Back</Button>
-      </View>
+      <WebView source={{ uri: 'https://onliel.web.app/' }} style={{ marginTop: 20 }} />
     );
   }
 }
