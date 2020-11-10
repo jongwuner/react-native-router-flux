@@ -238,11 +238,11 @@ const Example = () => (
           path="login/:data"
           titleStyle={{alignSelf: 'center'}}>
           <Scene
-            key="loginModal"
+            key="loginModal1"
             component={Login}
-            title="Login"
+            //title="Login"
             onExit={() => console.log('Login: onExit')}
-            leftTitle="Cancel"
+            //leftTitle="뒤로가기"
             onLeft={Actions.pop}
           />
           <Scene

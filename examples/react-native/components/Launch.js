@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import {View, Text, StyleSheet, Button, ActionSheetIOS} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import {MessageBarManager} from 'react-native-message-bar';
 
@@ -16,16 +16,20 @@ class Launch extends React.Component {
   render() {
     return (
       <View {...this.props} style={styles.container}>
-        <Text>Welcome</Text>
+        <Text>ONLIEL</Text>
+        <Text></Text>
+        <Text></Text>
         <Button
-          title="Go to Login"
+          title="회원 모드"
           onPress={() =>
             Actions.login({data: 'Custom data', title: 'Custom title'})
           }
         />
-        <Button title="Go to Register page" onPress={Actions.register} />
-        <Button title="Display Error Modal" onPress={Actions.error} />
-        <Button
+        <Button title="트레이너 모드" onPress={Actions.login2} />
+        <Button title="관리자 모드" onPress={Actions.login3} />
+
+        
+        {/* <Button
           title="Display Lightbox"
           onPress={() => Actions.demo_lightbox({data: 'passed data'})}
         />
@@ -44,8 +48,9 @@ class Launch extends React.Component {
               // Or check `index.ios.js` or `index.android.js` for a complete example
             })
           }
-        />
-        <Button title="Go to TabBar page" onPress={Actions.drawer} />
+        /> */}
+        {/*<Button title="Go to TabBar page" onPress={Actions.drawer} />*/}
+        
       </View>
     );
   }

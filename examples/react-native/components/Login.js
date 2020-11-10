@@ -26,9 +26,7 @@ const styles = StyleSheet.create({
 export default class extends React.Component {
   static onEnter = () => {
     Actions.refresh({
-      title: 'Login!',
-      rightTitle: 'rightTitle',
-      onRight: () => {},
+      title: '온리엘 멤버쉽'
     });
   };
 
