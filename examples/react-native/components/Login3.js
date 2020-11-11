@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
   },
 });
 
+/*
 const popToRoot = () => {
   Actions.popTo('launch');
 };
@@ -31,6 +32,7 @@ const popAndRefresh = () => {
     key: null,
   });
 };
+*/
 
 export default class extends React.Component {
   render() {

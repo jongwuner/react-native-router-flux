@@ -22,18 +22,18 @@ class Launch extends React.Component {
         <Button
           title="회원 모드"
           onPress={() =>
-            Actions.login({data: 'Custom data', title: 'Custom title'})
+            Actions.login({data: 'Custom data', title: '온리엘 멤버십'})
           }
         />
         <Button 
           title="트레이너 모드" 
           onPress={() => 
-            Actions.login2({data: 'Custom data', title: 'Custom title'})
+            Actions.login2({data: 'Custom data', title: '온리엘 트레이너'})
           } />
         <Button 
           title="관리자 모드" 
           onPress={() => 
-            Actions.login3({data: 'Custom data', title: 'Custom title'})
+            Actions.login3({data: 'Custom data', title: '온리엘 관리자'})
           } />
 
         {/* <Button
