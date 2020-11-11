@@ -265,6 +265,39 @@ const Example = () => (
             duration={1}
           />
         </Stack>
+        <Stack
+          key="login2"
+          headerLayoutPreset="center"
+          path="login2/:data"
+          titleStyle={{alignSelf: 'center'}}>
+          <Scene
+            key="loginModal2"
+            component={Login2}
+            //title="Login"
+            onExit={() => console.log('Login: onExit')}
+            //leftTitle="뒤로가기"
+            onLeft={Actions.pop}
+          />
+          <Scene
+            key="loginModal2"
+            component={Login2}
+            title="Login2"
+            onEnter={() => console.log('Login2: onEnter')}
+            backTitle="Back"
+            panHandlers={null}
+            duration={1}
+          />
+          <Scene
+            key="loginModal3"
+            hideNavBar
+            component={Login3}
+            title="Login3"
+            onEnter={() => console.log('Login3: onEnter')}
+            onExit={() => console.log('Login3: onExit')}
+            panHandlers={null}
+            duration={1}
+          />
+        </Stack>
       </Modal>
 
       <Scene component={MessageBar} />

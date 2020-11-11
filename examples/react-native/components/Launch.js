@@ -25,10 +25,17 @@ class Launch extends React.Component {
             Actions.login({data: 'Custom data', title: 'Custom title'})
           }
         />
-        <Button title="트레이너 모드" onPress={Actions.login2} />
-        <Button title="관리자 모드" onPress={Actions.login3} />
+        <Button 
+          title="트레이너 모드" 
+          onPress={() => 
+            Actions.login2({data: 'Custom data', title: 'Custom title'})
+          } />
+        <Button 
+          title="관리자 모드" 
+          onPress={() => 
+            Actions.login3({data: 'Custom data', title: 'Custom title'})
+          } />
 
-        
         {/* <Button
           title="Display Lightbox"
           onPress={() => Actions.demo_lightbox({data: 'passed data'})}

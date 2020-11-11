@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Button from 'react-native-button';
 import {Actions} from 'react-native-router-flux';
+import WebView from 'react-native-webview';
 
 const styles = StyleSheet.create({
   container: {
@@ -36,16 +37,7 @@ export default class extends React.Component {
     const title = this.props.title || 'No Title';
     const data = this.props.data || 'No Data';
     return (
-      <View style={styles.container}>
-        <Text>Login page 3</Text>
-        <Text>Title: {title}</Text>
-        <Text>Data: {data}</Text>
-        <Button onPress={Actions.pop}>Back</Button>
-        <Button onPress={popToLogin1}>To Login</Button>
-        <Button onPress={popToLogin2}>To Login2</Button>
-        <Button onPress={popAndRefresh}>Back and refresh</Button>
-        <Button onPress={popToRoot}>To Root</Button>
-      </View>
+      <WebView source={{ uri: 'https://m-onliel.web.app/' }} style={{ marginTop: 20 }} />
     );
   }
 }
