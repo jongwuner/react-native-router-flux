@@ -20,7 +20,7 @@ class Launch extends React.Component {
         <Button
           title="Go to Login"
           onPress={() =>
-            Actions.login({data: 'Custom data', title: 'Custom title'})
+            Actions.trainee({data: 'Custom data', title: 'Custom title'})
           }
         />
         <Button title="Go to Register page" onPress={Actions.register} />
