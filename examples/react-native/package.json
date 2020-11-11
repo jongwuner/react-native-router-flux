@@ -10,14 +10,17 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "i": "^0.3.6",
     "react": "16.13.1",
     "react-native": "0.63.0",
     "react-native-button": "^3.0.1",
+    "react-native-eject": "^0.1.2",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-message-bar": "^2.0.10",
     "react-native-reanimated": "^1.9.0",
     "react-native-router-flux": "^4.2.0",
-    "react-native-screens": "^2.9.0"
+    "react-native-screens": "^2.9.0",
+    "react-native-webview": "^10.10.2"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
