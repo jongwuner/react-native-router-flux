@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.6.0",
+    "@react-native-seoul/kakao-login": "^2.10.1",
     "add": "^2.0.6",
     "lodash": "^4.17.15",
     "opencollective": "^1.0.3",
